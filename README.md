@@ -1,10 +1,10 @@
-# vite-plugin-html-include
+# vite-plugin-html-modules
 
-**vite-plugin-html-include** — это плагин для [Vite](https://vitejs.dev/), позволяющий включать содержимое внешних HTML-файлов в основной HTML-документ. Это полезно для модульного подхода к разработке, когда вы хотите разделить ваш HTML-код на небольшие файлы и автоматически собирать их в итоговый `index.html`.
+**vite-plugin-html-modules** — это плагин для [Vite](https://vitejs.dev/), позволяющий включать содержимое внешних HTML-файлов в основной HTML-документ. Это полезно для модульного подхода к разработке, когда вы хотите разделить ваш HTML-код на небольшие файлы и автоматически собирать их в итоговый `index.html`.
 
 ### Установка
 
-Скопируйте плагин в ваш проект. Например, создайте файл `vite-plugin-html-include.ts` в корне проекта и добавьте код плагина.  
+Скопируйте плагин в ваш проект. Например, создайте файл `html-include.ts` в корне проекта и добавьте код плагина.  
 Или  
 1. склонируйте репозиторий с плагином:
     ```bash
@@ -14,9 +14,9 @@
     ```bash
     cd vite-plugin-html-modules
     ```
-3. Скопируйте файл плагина `vite-plugin-html-include.ts` в корень вашего проекта (или в подходящую директорию):
+3. Скопируйте файл плагина `vite-plugin-html-modules.ts` в корень вашего проекта (или в подходящую директорию):
     ```bash
-    cp vite-plugin-html-include.ts /путь/к/вашему/проекту/
+    cp vite-plugin-html-modules.ts /путь/к/вашему/проекту/
     ```
 4. Подключите плагин в конфигурации вашего проекта (см. ниже)
 
@@ -26,7 +26,7 @@
 
    ```typescript
    import { defineConfig } from 'vite'
-   import htmlIncludePlugin from './vite-plugin-html-include'
+   import htmlIncludePlugin from './vite-plugin-html-modules'
 
    export default defineConfig({
      plugins: [
@@ -89,7 +89,7 @@ project/
 │   └── style.css
 ├── index.html
 ├── vite.config.ts
-└── vite-plugin-html-include.ts
+└── vite-plugin-html-modules.ts
 ```
 
 ### Ограничения
